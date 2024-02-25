@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>二维码</title>
+    <script src="js/jquery2.1.4.js"></script>
+    <script src="js/jquery.qrcode.js"></script>
+    <script src="js/utf.js"></script>
+</head>
+<body>
+    <div id="qrcode"></div>
+</body>
+<script>
+    var config = {
+        width:200,
+        height:200,
+        text: '锄禾日当午，汗滴禾下土'
+    };
+    $("#qrcode").qrcode(config);
+</script>
+</html>
